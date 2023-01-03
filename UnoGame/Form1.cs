@@ -16,5 +16,14 @@ namespace UnoGame
         {
             InitializeComponent();
         }
+
+        private void startGameButton_Click(object sender, EventArgs e)
+        {
+            var playerCount = (int)playersNumField.Value;
+            var botCount = (int)botNumField.Value;
+
+            Form2 game = new Form2(playerCount, botCount);
+            Hide();
+        }
     }
 }

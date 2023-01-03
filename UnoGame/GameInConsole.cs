@@ -38,6 +38,7 @@ namespace UnoGame
                     Console.WriteLine("Stack: " + table.cardStack.GetRealLast().GetColor() + " " + table.cardStack.GetRealLast().GetSymbol());
                     Print(playerCards);
 
+#nullable enable
                     Card? card = null;
                     string? command = null;
                     if (!currentPlayer.GetBot()) command = GetUserCommand();

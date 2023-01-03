@@ -10,8 +10,7 @@ namespace UnoGame.Repositories
 
         public CardStack(Card firstCard)
         {
-            this.stack = new List<Card>();
-            this.stack.Add(firstCard);
+            this.stack = new List<Card> { firstCard };
         }
 
 
